@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+
  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>coffy</title>
@@ -14,6 +15,7 @@
  <style type="text/tailwindcss">
     :root {
         --font-inter: 'Inter', sans-serif;
+        --font-plus: 'Plus Jakarta Sans', sans-serif;
         --font-playfairdisplay: 'Playfair Display', serif;
         --font-roboto: 'Roboto', sans-serif;
         --color-neutralblack: #282A3A;
@@ -24,6 +26,7 @@
         
      --font-inter: var(--font-inter);
      --font-playfair: var(--font-playfairdisplay);
+     --font-plus: var(--font-plus);
      --font-roboto: var(--font-roboto);
      --color-neutralblack: var(--color-neutralblack);
      --color-brown: var(--color-brown);
@@ -76,8 +79,8 @@
       </p>
     </div>
     <div> 
-        <button class="mt-5 w-[200px] md:w-[365px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-Playfair rounded-tr-[36px] rounded-bl-[36px] hover:bg-yellow-700">
-            <span>Explore product</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+        <button class="mt-5 w-[200px] md:w-[365px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-Playfair rounded-tr-[36px] rounded-bl-[36px]">
+            <span class="font-playfair">Explore product</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
         </button>
     </div>
 </div>
@@ -177,122 +180,286 @@
 
 </section>
 
-
   <!-- card -->
-<section class="w-full flex flex-wrap justify-center gap-6 px-4">
+<section class="w-full flex flex-wrap justify-center gap-6 px-4 relative">
 
-  <!-- CARD -->
+ <!-- card 1-->
   <div class="mt-10">
     <div class="w-[280px] md:w-[302px] bg-white overflow-hidden rounded-tr-[40px] rounded-bl-[40px]">
-      <img src="img/cart1.jpg" alt="Chocolate Latte" class="w-full h-[180px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
+      <img src="img/cart1.jpg" alt="Chocolate Latte" class="w-full h-[240px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
 
       <div class="p-4 space-y-2">
-        <h2 class="text-lg font-semibold">Chocolate Latte</h2>
+        <h2 class="text-lg font-plus font-semibold">Chocolate Latte</h2>
 
         <div class="flex items-center gap-1 text-sm">
-          <span class="text-yellow-500 text-base">★</span>
-          <span class="font-semibold">4.9</span>
-          <span class="text-gray-500">(360 reviews)</span>
+
+          <span class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFB31F" stroke="#FFB31F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </span>
+          
+          <span class="font-bold font-inter ">4.9</span>
+          <span class="text-neutralblack opacity-75">(360 reviews)</span>
         </div>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
+        <p class="text-neutralblack opacity-70 text-sm leading-relaxed">
           Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
         </p>
 
         <div class="flex items-center justify-between pt-2">
-          <p class="text-lg font-semibold">$2.9</p>
-          <button class="w-8 h-8 flex items-center justify-center bg-[#6A2A0A] text-white rounded-md text-xl">+</button>
+          <p class="text-xl font-bold opacity-70 text-neutralblack">$2.9</p>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- کارت‌های تکراری -->
+ <!-- card 2-->
   <div class="mt-10">
     <div class="w-[280px] md:w-[302px] bg-white overflow-hidden rounded-tr-[40px] rounded-bl-[40px]">
-      <img src="img/cart2.jpg" alt="Chocolate Latte" class="w-full h-[180px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
+      <img src="img/cart2.jpg" alt="Chocolate Latte" class="w-full h-[240px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
 
       <div class="p-4 space-y-2">
-        <h2 class="text-lg font-semibold">Chocolate Latte</h2>
+        <h2 class="text-lg font-plus font-semibold">Mocha Latte</h2>
 
         <div class="flex items-center gap-1 text-sm">
-          <span class="text-yellow-500 text-base">★</span>
-          <span class="font-semibold">4.9</span>
-          <span class="text-gray-500">(360 reviews)</span>
+
+          <span class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFB31F" stroke="#FFB31F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </span>
+          
+          <span class="font-bold font-inter ">4.8</span>
+          <span class="text-neutralblack opacity-75">(180 reviews)</span>
         </div>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
+        <p class="text-neutralblack opacity-70 text-sm leading-relaxed">
           Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
         </p>
 
         <div class="flex items-center justify-between pt-2">
-          <p class="text-lg font-semibold">$2.9</p>
-          <button class="w-8 h-8 flex items-center justify-center bg-[#6A2A0A] text-white rounded-md text-xl">+</button>
+          <p class="text-xl font-bold opacity-70 text-neutralblack">$2.7</p>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 
-  <!-- کارت‌های تکراری -->
+  <!-- card 3-->
   <div class="mt-10">
     <div class="w-[280px] md:w-[302px] bg-white overflow-hidden rounded-tr-[40px] rounded-bl-[40px]">
-      <img src="img/cart3.jpg" alt="Chocolate Latte" class="w-full h-[180px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
+      <img src="img/cart3.jpg" alt="Chocolate Latte" class="w-full h-[240px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
 
       <div class="p-4 space-y-2">
-        <h2 class="text-lg font-semibold">Chocolate Latte</h2>
+        <h2 class="text-lg font-plus font-semibold">Coffee Latte</h2>
 
         <div class="flex items-center gap-1 text-sm">
-          <span class="text-yellow-500 text-base">★</span>
-          <span class="font-semibold">4.9</span>
-          <span class="text-gray-500">(360 reviews)</span>
+
+          <span class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFB31F" stroke="#FFB31F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </span>
+          
+          <span class="font-bold font-inter ">4.8</span>
+          <span class="text-neutralblack opacity-75">(450 reviews)</span>
         </div>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
+        <p class="text-neutralblack opacity-70 text-sm leading-relaxed">
           Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
         </p>
 
         <div class="flex items-center justify-between pt-2">
-          <p class="text-lg font-semibold">$2.9</p>
-          <button class="w-8 h-8 flex items-center justify-center bg-[#6A2A0A] text-white rounded-md text-xl">+</button>
+          <p class="text-xl font-bold opacity-70 text-neutralblack">$2.9</p>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- کارت‌های تکراری -->
-  <div class="mt-10">
+  </div> 
+
+  <!-- card 4-->
+  <div class="mt-10 ">
     <div class="w-[280px] md:w-[302px] bg-white overflow-hidden rounded-tr-[40px] rounded-bl-[40px]">
-      <img src="img/cart4.jpg" alt="Chocolate Latte" class="w-full h-[180px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
+      <img src="img/cart4.jpg" alt="Chocolate Latte" class="w-full h-[240px] object-cover rounded-tr-[40px] rounded-bl-[40px]" />
 
       <div class="p-4 space-y-2">
-        <h2 class="text-lg font-semibold">Chocolate Latte</h2>
+        <h2 class="text-lg font-plus font-semibold">Hazelnut Latte</h2>
 
         <div class="flex items-center gap-1 text-sm">
-          <span class="text-yellow-500 text-base">★</span>
-          <span class="font-semibold">4.9</span>
-          <span class="text-gray-500">(360 reviews)</span>
+
+          <span class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFB31F" stroke="#FFB31F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg>
+          </span>
+          
+          <span class="font-bold font-inter ">4.9</span>
+          <span class="text-neutralblack opacity-75">(390 reviews)</span>
         </div>
 
-        <p class="text-gray-600 text-sm leading-relaxed">
+        <p class="text-neutralblack opacity-70 text-sm leading-relaxed">
           Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla
         </p>
 
         <div class="flex items-center justify-between pt-2">
-          <p class="text-lg font-semibold">$2.9</p>
-          <button class="w-8 h-8 flex items-center justify-center bg-[#6A2A0A] text-white rounded-md text-xl">+</button>
+          <p class="text-xl font-bold opacity-70 text-neutralblack">$2.8</p>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
         </div>
       </div>
     </div>
   </div>
+ 
 
-  <div class="w-full hidden md:flex justify-center mt-4 gap-2">
+  <div class="w-full hidden md:flex justify-center mt-4 mb-15 gap-2">
   <span class="w-2 h-2 bg-[#6A2A0A] rounded-full"></span>
   <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
   <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
   <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
 </div>
+
+ <div class="absolute bottom-0 left-1/2 -translate-x-1/2  w-3/4 h-px bg-gradient-to-r from-transparent via-black to-transparent"></div>
 </section>
 
+
+<!-- about us-->
+
+<section class="w-full flex flex-col justify-center items-center px-4 relative">
+
+  
+  <div class="mt-15 text-center ">
+    <h4 class="font-inter text-xl md:text-2xl font-normal text-neutralblack opacity-60 ">
+     <a href="https://www.google.com/?zx=1765218501839&no_sw_cr=1" class="underline ">About us</a>
+    </h4>
+
+    <h2 class="font-playfair text-3xl md:text-4xl font-normal text-neutralblack ">
+     Why we are the best
+    </h2>
+  </div>
+
+  <div class="w-[85%] flex justify-center mt-20 mb-20 gap-20 items-end">
+    <div class="w-1/2">
+      <p class="font-inter text-xl text-neutralblack underline">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed  eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+      </p>
+      <p class="mt-6 font-inter text-xl text-neutralblack">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.
+      </p>
+      <p class="mt-6 font-inter text-xl text-neutralblack">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
+      </p>
+      <button class="mt-6 w-[200px] md:w-[280px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-playfair rounded-tr-[32px] rounded-bl-[32px] ">
+            <span class="font-playfair">Read More</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+        </button>
+    </div>
+
+    <div class="w-1/2 flex justify-between ">
+      <div><img src="img/cofy2.jpg" class="w-[288px] h-[378px] rounded-tr-[120px] rounded-bl-[120px] mt-16" alt=""></div>
+      <div><img src="img/cofy1.jpg" class="w-[288px] h-[378px] rounded-tl-[120px] rounded-br-[120px]" alt=""></div>
+    </div>
+  </div>
+
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2  w-3/4 h-px bg-gradient-to-r from-transparent via-black to-transparent"></div>
+
+</section>
+
+  <!--Testimonial-->
+<section class="w-full flex flex-col justify-center mb-20 items-center px-4 relative">
+
+ 
+  <div class="mt-20 text-center">
+    <h4 class="font-inter text-xl md:text-2xl font-normal text-neutralblack opacity-60">
+      Testimonial
+    </h4>
+
+    <h2 class="font-playfair text-3xl md:text-4xl font-normal text-neutralblack">
+      What our buyers say
+    </h2>
+  </div>
+
+  <div class="flex w-[90%] justify-center gap-6 ">
+   <!-- card 1-->
+    <div class="w-[90%] flex justify-between mt-20 gap-10">
+
+   <div class="md:w-[400px] bg-transparent">
+      <!-- هدر کارت: عکس + (اسم و ستاره ها) -->
+      <div class="flex items-center gap-4">
+        <img src="https://i.pravatar.cc/120?img=1" alt="avatar" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+
+        <div>
+          <h3 class="text-lg font-semibold text-neutral-900">Michael Wong</h3>
+
+          <!-- ستاره‌ها کنار هم (در یک خط زیر اسم) -->
+          <div class="flex items-center gap-1 mt-1">
+            <!-- هر ستاره با svg برای ظاهری دقیق -->
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- متن توضیح -->
+      <p class="mt-4 text-neutral-600 leading-7">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
+        Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+      </p>
+    </div>
+
+    <!-- کارت 2 -->
+    <div class="md:w-[400px] bg-transparent">
+      <div class="flex items-center gap-4">
+        <img src="https://i.pravatar.cc/120?img=5" alt="avatar" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+
+        <div>
+          <h3 class="text-lg font-semibold text-neutral-900">Avril Song</h3>
+          <div class="flex items-center gap-1 mt-1">
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-4 text-neutral-600 leading-7">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
+        Integer sed pretium odio lectus at malesuada sed eget nunc.
+      </p>
+    </div>
+
+    <!-- کارت 3 -->
+    <div class="md:w-[400px] bg-transparent">
+      <div class="flex items-center gap-4">
+        <img src="https://i.pravatar.cc/120?img=12" alt="avatar" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+
+        <div>
+          <h3 class="text-lg font-semibold text-neutral-900">Jeanne Wood</h3>
+          <div class="flex items-center gap-1 mt-1">
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-4 text-neutral-600 leading-7">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
+        Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+  <div class="w-full hidden md:flex justify-center mt-4 mb-15 gap-2">
+  <span class="w-2 h-2 bg-[#6A2A0A] rounded-full"></span>
+  <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+  <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+  <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+</div>
+
+ <div class="absolute bottom-0 left-1/2 -translate-x-1/2  w-3/4 h-px bg-gradient-to-r from-transparent via-black to-transparent"></div>
+
+  </section>
 </body>
 
 </html>
