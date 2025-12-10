@@ -20,6 +20,7 @@
         --font-roboto: 'Roboto', sans-serif;
         --color-neutralblack: #282A3A;
         --color-brown: #6D1600;
+        --color-yello1: #FFB31F;
        
     }
     @theme{
@@ -30,6 +31,7 @@
      --font-roboto: var(--font-roboto);
      --color-neutralblack: var(--color-neutralblack);
      --color-brown: var(--color-brown);
+     --color-yello1: var(--color-yello1);
         
     }
  </style>
@@ -79,7 +81,7 @@
       </p>
     </div>
     <div> 
-        <button class="mt-5 w-[200px] md:w-[365px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-Playfair rounded-tr-[36px] rounded-bl-[36px]">
+        <button class="mt-5 w-[200px] md:w-[365px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-Playfair rounded-tr-[36px] rounded-bl-[36px] cursor-pointer">
             <span class="font-playfair">Explore product</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
         </button>
     </div>
@@ -178,10 +180,9 @@
     </div>
   </div>
 
-</section>
 
-  <!-- card -->
-<section class="w-full flex flex-wrap justify-center gap-6 px-4 relative">
+
+<div class="w-full flex flex-wrap justify-center gap-6 px-4 relative">
 
  <!-- card 1-->
   <div class="mt-10">
@@ -207,7 +208,7 @@
 
         <div class="flex items-center justify-between pt-2">
           <p class="text-xl font-bold opacity-70 text-neutralblack">$2.9</p>
-          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl cursor-pointer">+</button>
         </div>
       </div>
     </div>
@@ -237,7 +238,7 @@
 
         <div class="flex items-center justify-between pt-2">
           <p class="text-xl font-bold opacity-70 text-neutralblack">$2.7</p>
-          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl cursor-pointer">+</button>
         </div>
       </div>
     </div>
@@ -267,7 +268,7 @@
 
         <div class="flex items-center justify-between pt-2">
           <p class="text-xl font-bold opacity-70 text-neutralblack">$2.9</p>
-          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl cursor-pointer">+</button>
         </div>
       </div>
     </div>
@@ -297,7 +298,7 @@
 
         <div class="flex items-center justify-between pt-2">
           <p class="text-xl font-bold opacity-70 text-neutralblack">$2.8</p>
-          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl">+</button>
+          <button class="w-20 h-8 flex items-center justify-center bg-brown text-white rounded-lg text-xl cursor-pointer">+</button>
         </div>
       </div>
     </div>
@@ -312,8 +313,9 @@
 </div>
 
  <div class="absolute bottom-0 left-1/2 -translate-x-1/2  w-3/4 h-px bg-gradient-to-r from-transparent via-black to-transparent"></div>
-</section>
+</div>
 
+</section>
 
 <!-- about us-->
 
@@ -341,12 +343,12 @@
       <p class="mt-6 font-inter text-xl text-neutralblack">
         Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
       </p>
-      <button class="mt-6 w-[200px] md:w-[280px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-playfair rounded-tr-[32px] rounded-bl-[32px] ">
+      <button class="mt-6 w-[200px] md:w-[280px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-playfair rounded-tr-[32px] rounded-bl-[32px] cursor-pointer ">
             <span class="font-playfair">Read More</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
         </button>
     </div>
 
-    <div class="w-1/2 flex justify-between ">
+    <div class="hidden md:w-1/2 md:flex md:justify-between ">
       <div><img src="img/cofy2.jpg" class="w-[288px] h-[378px] rounded-tr-[120px] rounded-bl-[120px] mt-16" alt=""></div>
       <div><img src="img/cofy1.jpg" class="w-[288px] h-[378px] rounded-tl-[120px] rounded-br-[120px]" alt=""></div>
     </div>
@@ -357,100 +359,96 @@
 </section>
 
   <!--Testimonial-->
-<section class="w-full flex flex-col justify-center mb-20 items-center px-4 relative">
+<section class="w-full flex flex-col justify-center items-center px-4 relative">
 
  
   <div class="mt-20 text-center">
     <h4 class="font-inter text-xl md:text-2xl font-normal text-neutralblack opacity-60">
       Testimonial
     </h4>
-
     <h2 class="font-playfair text-3xl md:text-4xl font-normal text-neutralblack">
       What our buyers say
     </h2>
   </div>
 
-  <div class="flex w-[90%] justify-center gap-6 ">
-   <!-- card 1-->
-    <div class="w-[90%] flex justify-between mt-20 gap-10">
+  <div class="md:flex md:w-[85%] w-full md:flex-row flex-col items-center justify-center gap-10 mt-20 ">
+   
+    <!--card 1-->
+   <div class="md:w-[405px] w-[300px] h-auto  bg-transparent">
 
-   <div class="md:w-[400px] bg-transparent">
-      <!-- هدر کارت: عکس + (اسم و ستاره ها) -->
       <div class="flex items-center gap-4">
-        <img src="https://i.pravatar.cc/120?img=1" alt="avatar" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
-
+        <img src="img/face1.jpg" alt="avatar" class="w-24 h-24 rounded-full object-cover flex-shrink-0">
         <div>
-          <h3 class="text-lg font-semibold text-neutral-900">Michael Wong</h3>
+          <h3 class="text-xl font-inter text-neutralblack font-semibold">Michael Wong</h3>
 
-          <!-- ستاره‌ها کنار هم (در یک خط زیر اسم) -->
           <div class="flex items-center gap-1 mt-1">
-            <!-- هر ستاره با svg برای ظاهری دقیق -->
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
           </div>
         </div>
       </div>
 
-      <!-- متن توضیح -->
-      <p class="mt-4 text-neutral-600 leading-7">
-        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
-        Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+      <p class="mt-4 text-neutralblack leading-7">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
       </p>
     </div>
 
-    <!-- کارت 2 -->
-    <div class="md:w-[400px] bg-transparent">
-      <div class="flex items-center gap-4">
-        <img src="https://i.pravatar.cc/120?img=5" alt="avatar" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
+     <!--card 2-->
+   <div class="md:w-[405px] w-[300px] h-auto  bg-transparent">
 
+      <div class="flex items-center gap-4">
+        <img src="img/face2.jpg" alt="avatar" class="w-24 h-24 rounded-full object-cover flex-shrink-0">
         <div>
-          <h3 class="text-lg font-semibold text-neutral-900">Avril Song</h3>
+          <h3 class="text-xl font-inter text-neutralblack font-semibold">Avril Song</h3>
+
           <div class="flex items-center gap-1 mt-1">
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-[#D9D9D9]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
           </div>
         </div>
       </div>
 
-      <p class="mt-4 text-neutral-600 leading-7">
-        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
-        Integer sed pretium odio lectus at malesuada sed eget nunc.
+      <p class="mt-4 text-neutralblack leading-7">
+        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc.
       </p>
     </div>
+     <!--card 3-->
+   <div class="md:w-[405px] w-[300px] h-auto  bg-transparent">
 
-    <!-- کارت 3 -->
-    <div class="md:w-[400px] bg-transparent">
       <div class="flex items-center gap-4">
-        <img src="https://i.pravatar.cc/120?img=12" alt="avatar" class="w-20 h-20 rounded-full object-cover flex-shrink-0">
-
+        <img src="img/face3.jpg" alt="avatar" class="w-24 h-24 rounded-full object-cover flex-shrink-0">
         <div>
-          <h3 class="text-lg font-semibold text-neutral-900">Jeanne Wood</h3>
+          <h3 class="text-xl font-inter text-neutralblack font-semibold">Jeanne Wood</h3>
+
           <div class="flex items-center gap-1 mt-1">
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
-            <svg class="w-4 h-4 text-gray-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-yello1" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
+            <svg class="w-4 h-4 text-[#D9D9D9]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L23.6 9.753l-5.8 5.657L19.335 24 12 19.897 4.665 24l1.535-8.59L0.4 9.753l7.932-1.735L12 .587z"/></svg>
           </div>
         </div>
       </div>
 
-      <p class="mt-4 text-neutral-600 leading-7">
-        Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet.
-        Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
+      <p class="mt-4 text-neutralblack leading-7">
+       Lorem ipsum dolor sit amet consectetur. Scelerisque urna vel sit dolor fringilla volutpat lectus amet. Integer sed pretium odio lectus at malesuada sed eget nunc. Viverra malesuada viverra id vel tortor dui adipiscing.
       </p>
     </div>
+   
 
   </div>
 
 </div>
-  <div class="w-full hidden md:flex justify-center mt-4 mb-15 gap-2">
+  <div class="w-full hidden md:flex justify-center mt-4 mb-20 gap-2">
   <span class="w-2 h-2 bg-[#6A2A0A] rounded-full"></span>
   <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
   <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
@@ -460,6 +458,197 @@
  <div class="absolute bottom-0 left-1/2 -translate-x-1/2  w-3/4 h-px bg-gradient-to-r from-transparent via-black to-transparent"></div>
 
   </section>
+
+  <!-- Blog-->
+  <section class="w-full flex flex-col justify-center items-center px-4">
+
+  <!-- Title -->
+
+  <div class="mt-20 text-center">
+    <h4 class="font-inter mb-2 text-xl md:text-2xl font-normal text-neutralblack opacity-60">
+     Blog
+    </h4>
+
+    <h2 class="font-playfair text-3xl md:text-4xl font-normal text-neutralblack">
+     Read our articles
+    </h2>
+  </div>
+
+<div class="w-full flex flex-wrap justify-center gap-6 mb-10 relative">
+
+ <!-- card 1-->
+  <div class="flex flex-col items-center mt-10">
+    <div class="w-[280px] md:w-[405px] bg-white overflow-hidden rounded-tr-[96px] rounded-bl-[40px] border border-1 border-gray-300 p-4">
+      <img src="img/blog1.jpg" alt="Chocolate Latte" class="w-full md:h-[320px] h-[200px] object-cover rounded-tr-[80px] rounded-bl-[80px]" />
+
+      <div class="flex flex-row justify-between mt-4">
+        <div class="flex  gap-1 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1280 1536"><path fill="#000000" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5zm-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384z"/></svg>
+        <h2 class="text-neutralblack text-sm font-inter">John Doe</h2>
+        </div>
+
+         <div class="flex gap-1 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#000000" d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3"/></svg>
+        <h2 class="text-neutralblack text-sm font-inter">Feb 23, 2024</h2>
+        </div>
+      </div>
+
+        <p class="text-neutralblack font-semibold text-2xl leading-relaxed mt-4">
+          Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+        </p>
+
+        <div class="flex items-center justify-end pt-2">
+          <div class="flex justify-center items-center gap-2">
+          <p class="text-sm text-neutralblack">View details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#000000" d="m18 12l.354-.354l.353.354l-.353.354zm-12 .5a.5.5 0 0 1 0-1zm8.354-4.854l4 4l-.708.708l-4-4zm4 4.708l-4 4l-.708-.708l4-4zM18 12.5H6v-1h12z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 2-->
+  <div class="flex flex-col items-center mt-10">
+    <div class="w-[280px] md:w-[405px] bg-white overflow-hidden rounded-tr-[96px] rounded-bl-[40px] border border-1 border-gray-300 p-4">
+      <img src="img/blog2.jpg" alt="Chocolate Latte" class="w-full md:h-[320px] h-[200px] object-cover rounded-tr-[80px] rounded-bl-[80px]" />
+
+      <div class="flex flex-row justify-between mt-4">
+        <div class="flex  gap-1 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1280 1536"><path fill="#000000" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5zm-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384z"/></svg>
+        <h2 class="text-neutralblack text-sm font-inter">John Doe</h2>
+        </div>
+
+         <div class="flex gap-1 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#000000" d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3"/></svg>
+        <h2 class="text-neutralblack text-sm font-inter">Feb 23, 2024</h2>
+        </div>
+      </div>
+
+        <p class="text-neutralblack font-semibold text-2xl leading-relaxed mt-4">
+          Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+        </p>
+
+        <div class="flex items-center justify-end pt-2">
+          <div class="flex justify-center items-center gap-2">
+          <p class="text-sm text-neutralblack">View details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#000000" d="m18 12l.354-.354l.353.354l-.353.354zm-12 .5a.5.5 0 0 1 0-1zm8.354-4.854l4 4l-.708.708l-4-4zm4 4.708l-4 4l-.708-.708l4-4zM18 12.5H6v-1h12z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- card 3-->
+  <div class="flex flex-col items-center mt-10">
+    <div class="w-[280px] md:w-[405px] bg-white overflow-hidden rounded-tr-[96px] rounded-bl-[40px] border border-1 border-gray-300 p-4">
+      <img src="img/blog3.jpg" alt="Chocolate Latte" class="w-full md:h-[320px] h-[200px] object-cover rounded-tr-[80px] rounded-bl-[80px]" />
+
+      <div class="flex flex-row justify-between mt-4">
+        <div class="flex  gap-1 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 1280 1536"><path fill="#000000" d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5zm-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384z"/></svg>
+        <h2 class="text-neutralblack text-sm font-inter">John Doe</h2>
+        </div>
+
+         <div class="flex gap-1 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#000000" d="M2 19c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-8H2zM19 4h-2V3c0-.6-.4-1-1-1s-1 .4-1 1v1H9V3c0-.6-.4-1-1-1s-1 .4-1 1v1H5C3.3 4 2 5.3 2 7v2h20V7c0-1.7-1.3-3-3-3"/></svg>
+        <h2 class="text-neutralblack text-sm font-inter">Feb 23, 2024</h2>
+        </div>
+      </div>
+
+        <p class="text-neutralblack font-semibold text-2xl leading-relaxed mt-4">
+          Lorem ipsum dolor sit amet consectetur. Est tempor morbi pellentesque.
+        </p>
+
+        <div class="flex items-center justify-end pt-2">
+          <div class="flex justify-center items-center gap-2">
+          <p class="text-sm text-neutralblack">View details</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#000000" d="m18 12l.354-.354l.353.354l-.353.354zm-12 .5a.5.5 0 0 1 0-1zm8.354-4.854l4 4l-.708.708l-4-4zm4 4.708l-4 4l-.708-.708l4-4zM18 12.5H6v-1h12z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div> 
+</div>
+
+  <div class="w-full hidden md:flex justify-center mt-4 gap-2">
+   <button class="cursor-pointer mt-6 w-[200px] md:w-[280px] h-20 bg-brown text-white flex justify-center items-center gap-3 md:text-2xl text-xl  font-playfair rounded-tr-[32px] rounded-bl-[32px] ">
+    <span class="font-playfair">Read More</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right-icon lucide-arrow-down-right"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+    </button>
+  </div>
+
+ <div class="absolute bottom-0 left-1/2 -translate-x-1/2  w-3/4 h-px bg-gradient-to-r from-transparent via-black to-transparent"></div>
+</div>
+
+</section>
+
+<footer class="bg-neutralblack text-white w-full p-20 mt-20">
+
+<div class="w-full mx-auto flex gap-20">
+
+<div class="w-1/3 flex flex-col">
+  <div class="flex justify-start items-center gap-2">
+    <img src="img/footer Logo.png" alt="">
+    <h2 class="text-5xl font-semibold font-inter ">Ngopi</h2>
+  </div>
+
+  <p class="font-inter text-xl mt-8 leading-relaxed">Discover tranquility at Ngopi a sanctuary for unwinding, where your evenings are perfected with relaxation and rich flavors.</p>
+
+   <p class="font-inter text-xl mt-8">hello@ngopi.com</p>
+   <p class="font-inter text-xl mt-1">Phone : +01 23456789</p>
+
+</div>
+
+<div class="w-2/3 flex flex-col ">
+  <!--quick menus-->
+<div class="flex justify-between ">
+
+<div>
+  <h3 class="text-[28px]  font-playfair mb-6">Quick Links</h3>
+  <ul class="space-y-[16px] font-inter text-[16px]">
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Testimonial</a></li>
+  </ul>
+</div>
+
+<div>
+  <h3 class="text-[28px]  font-playfair mb-6">Resources</h3>
+  <ul class="space-y-[16px] font-inter text-[16px]">
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    
+  </ul>
+</div>
+
+<div>
+  <h3 class="text-[28px]  font-playfair mb-6">Social Media</h3>
+  <div class="flex justify-center items-center gap-1">
+    <img src="img/Facebook.png" alt="">
+    <img src="img/Twitter.png" alt="">
+    <img src="img/Instagram.png" alt="">
+    <img src="img/Linkedin.png" alt="">
+    <img src="img/Youtube.png" alt="">
+  </div>
+</div>
+
+</div>
+
+<div class="w-full flex flex-col mt-2">
+  <h3 class="text-[28px]  font-playfair mt-6 ">Subscribe</h3>
+
+  <div class="w-full h-20 rounded-2xl bg-white/5 px-2 mt-6 flex justify-between items-center">
+    
+    <div class="flex mx-6 justify-center items-center gap-2 z-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 2048 2048"><path fill="#ffffff" d="M2048 384v1280H0V384h2048zM143 512l881 441l881-441H143zm1777 1024V648l-896 447l-896-447v888h1792z"/></svg>
+      <p class="text-xl font-inter text-white/30">name@domain.com</p>
+    </div>
+
+      <button class="w-[100px] font-inter md:w-[179px] h-15 bg-brown text-white flex justify-center items-center gap-3 text-xl rounded-lg  cursor-pointer">Send</button>
+
+  </div>
+</div>
+</div>
+
+</div>
 </body>
 
 </html>
